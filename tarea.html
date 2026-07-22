@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hoja de Vida</title>
+</head>
+
+<body>
+
+<header>
+    <h1>Hoja de vida - Ana Valeria Vicente Axpuac</h1>
+</header>
+
+<picture>
+  <source srcset="imagenes/gato.avif" type="image/avif">
+  <source srcset="imagenes/gato.webp" type="image/webp">
+  <img src="imagenes/gato.jpg" alt="Aca deberia aparecer un gato con carbatin amarillo" width="736" height="876">
+</picture>
+
+<section id="perfil">
+    <h2>Perfil</h2>
+
+    <article>
+        <p>
+            Estudiante de Ingeniería en Sistemas en la Universidad
+            Mesoamericana. Formación previa como Bachiller en Computación
+            en el Colegio Evangélico "La Patria" Occidente.
+            Experiencia de práctica profesional en Telus International.
+        </p>
+    </article>
+
+</section>
+
+<section id="educacion">
+
+    <h2>Educación</h2>
+
+    <article>
+        <h3>Universidad Mesoamericana</h3>
+        <p>Sexto semestre de Ingeniería en Sistemas (2024-2026).</p>
+    </article>
+
+    <article>
+        <h3>Colegio Evangélico "La Patria" Occidente</h3>
+        <p>Bachiller en Computación (2022-2023).</p>
+    </article>
+
+</section>
+
+<section id="experiencia">
+
+    <h2>Experiencia Laboral</h2>
+
+    <article>
+        <p>
+            Práctica supervisada en Telus International,
+            del 4 de septiembre al 6 de octubre de 2023.
+        </p>
+    </article>
+
+</section>
+
+<section id="conocimientos">
+
+    <h2>Otros Conocimientos</h2>
+
+    <article>
+        <ul>
+            <li>Trabajo en equipo</li>
+            <li>Colaboración efectiva</li>
+            <li>Adaptabilidad</li>
+            <li>Programación</li>
+            <li>Desarrollo de soluciones tecnológicas</li>
+            <li>Organización y planificación</li>
+        </ul>
+    </article>
+
+</section>
+
+<aside>
+
+    <h2>Información adicional</h2>
+
+    <p>
+        Interés en el desarrollo de software, bases de datos y desarrollo web
+    </p>
+
+</aside>
+
+<section id="contacto">
+
+    <h2>Contacto</h2>
+
+    <p><strong>Correo:</strong> ana_vicente17@umes.edu.gt</p>
+    <p><strong>Teléfono:</strong> 3777-0290</p>
+    <p><strong>Dirección:</strong> Quetzaltenango</p>
+</section>
+
+<form method="post">
+  <label for="nombre">Nombre completo:</label>
+  <input type="text" id="nombre" name="nombre" required><br>
+
+  <label for="correo">Correo electronico:</label>
+  <input type="email" id="correo" name="correo" required><br>
+
+  <label for="telefono">Numero de telefono:</label>
+  <input type="tel" id="telefono" name="telefono" required><br>
+
+  <label for="fechaInicio">Fecha en la que puede iniciar:</label>
+  <input type="date" id="fechaInicio" name="fechaInicio" min="2026-07-23" max="2026-08-23" required><br>
+
+  <label for="horaEntrevista">Hora preferida para la entrevista:</label>
+  <input type="time" id="horaEntrevista" name="horaEntrevista" min="08:00" max="16:30" step="1800" required><br>
+
+  <label for="modalidad">Modalidad de trabajo de preferencia:</label>
+  <select id="modalidad" name="modalidad" required>
+    <option value="" disabled selected>Seleccione una opción</option>
+    <option value="remoto">Remoto</option>
+    <option value="hibrido">Híbrido</option>
+    <option value="presencial">Presencial</option>
+  </select><br>
+
+  <label for="carta">Carta breve de presentación:</label>
+  <textarea id="carta" name="carta" rows="6" required></textarea><br>
+
+  <button type="submit">Enviar</button>
+</form>
+
+</body>
+
+</html>
